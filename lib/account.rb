@@ -2,7 +2,7 @@
 
 class Account
 
-    attr_reader :balance, :statement
+    attr_accessor :balance, :statement
 
     def initialize
         @balance = 100
