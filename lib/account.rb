@@ -22,7 +22,7 @@ class Account
     def print
         @statement = statement
         statement.map do |transaction|
-           transaction.title + " " + transaction.amount.to_s
+           transaction.time.strftime("%T") + " " + transaction.title + " " + transaction.amount.to_s
         end
     end
 
