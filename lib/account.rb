@@ -22,6 +22,7 @@ class Account
     def print
         @statement = statement
         statement.map do |transaction|
+            "date || credit/debit || balance"
            "#{transaction.date.strftime("%F")} #{transaction.title} #{transaction.amount.to_s} #{@balance}"
         end
     end
