@@ -1,10 +1,10 @@
 
 class Withdrawl
-    attr_reader :amount, :time, :title
+    attr_reader :amount, :date, :title
 
     def initialize(amount)
         @title = "Withdrawl"
         @amount = amount
-        @time = Time.now
+        @date = Time.now
     end
 end

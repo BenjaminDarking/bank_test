@@ -5,7 +5,7 @@ class Account
     attr_accessor :balance, :statement
 
     def initialize
-        @balance = 100
+        @balance = 0
         @statement = []
     end
 
@@ -22,7 +22,7 @@ class Account
     def print
         @statement = statement
         statement.map do |transaction|
-           transaction.time.strftime("%T") + " " + transaction.title + " " + transaction.amount.to_s
+           "#{transaction.date.strftime("%F")} #{transaction.title} #{transaction.amount.to_s} #{@balance}"
         end
     end
 
