@@ -1,6 +1,6 @@
 
 class Withdrawl
-    attr_reader :withdraw, :time, :title
+    attr_reader :amount, :time, :title
 
     def initialize(amount)
         @title = "Withdrawl"
