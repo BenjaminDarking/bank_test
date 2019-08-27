@@ -10,12 +10,12 @@ class Account
     end
 
     def withdraw(amount)
-        
         @statement.push(Withdrawl.new(amount))
         @balance -= amount 
     end
 
     def deposit(amount) 
+        @statement.push(Deposit.new(amount))
         @balance += amount 
 
     end

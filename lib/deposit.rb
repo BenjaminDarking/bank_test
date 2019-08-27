@@ -1,11 +1,7 @@
 
 class Deposit
-    atrr_reader :deposit
 
-        def intialize(amount)
+        def initialize(amount)
             @amount = amount
         end
-
-       
-    
-        End
+    end
